@@ -1,0 +1,22 @@
+<font Face="Helvetica">
+<h2> <center>CHANGE CONTROL NOTIFICATION</center></h2>
+<br>
+<p><h3>Attention:</h3>
+<font size="2">A Change Control request was either created or updated.<br>
+The details are as follows:<br>
+<br>
+<b>Change Request:</b> {!Change_Control__c.Name}<br>
+<b>Requested By: </b>{!Change_Control__c.Requestor__c}<br>
+<b>Date Requested: </b>{!Change_Control__c.Date_Requested__c}<br>
+<b>Status:</b> {!Change_Control__c.Request_Status__c}<br>
+<br>
+<b>Description:</b><br>
+{!Change_Control__c.Description__c}<br>
+<br>
+<b>Date Completed: </b>{!Change_Control__c.Date_Completed__c}<br>
+<br>
+<b>Issues/Comments:</b><br>
+{!Change_Control__c.Results__c}
+<br> <br> </p>
+<a href="https://na2.salesforce.com/{!Change_Control__c.Id}">Click here to view
+</html>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Template for communication of change requests</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Change Notification</name>
+    <style>none</style>
+    <subject>Change Record Notification - {!Change_Control__c.Name}</subject>
+    <textOnly>CHANGE CONTROL NOTIFICATION
+
+
+Attention:
+A Change Control request was either created or updated.
+
+The details are as follows:
+
+
+
+Change Request: {!Change_Control__c.Name}
+
+Requested By: {!Change_Control__c.Requestor__c}
+
+Date Requested: {!Change_Control__c.Date_Requested__c}
+
+Status: {!Change_Control__c.Request_Status__c}
+
+
+
+Description:
+
+{!Change_Control__c.Description__c}
+
+
+
+Date Completed: {!Change_Control__c.Date_Completed__c}
+
+
+
+Issues/Comments:
+
+{!Change_Control__c.Results__c}
+
+ 
+ 
+Click here to view</textOnly>
+    <type>custom</type>
+</EmailTemplate>
